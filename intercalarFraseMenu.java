@@ -27,7 +27,6 @@ public class intercalarFraseMenu {
     static String intercFrase (String frase1, String frase2){
         String fraseInterc = "";
         int i = 0, i2 = 0;
-        // int longitud = (frase1.length()) + (frase2.length())-1;
         boolean sw = false, sw2 = false;
         i2 = frase2.length()-1;
 
