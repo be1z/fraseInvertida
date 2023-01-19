@@ -9,17 +9,16 @@ public class palindromo {
     }
 
     static void compPalindromo (String frase){
-        int i = 0, i2 = frase.length()-1;
         boolean sw = true;
+        String frase1 = frase.trim();
+        int i = 0, i2 = frase1.length()-1;
 
-        for(i=0;i<frase.length()-1;i++){
-            if(frase.charAt(i) != ' '){
-                if(frase.charAt(i) != frase.charAt(i2)){
+        for(i=0;i<frase1.length()-1;i++){
+                if(frase1.charAt(i) != frase1.charAt(i2)){
                     sw = false;
-                    i = frase.length()-1;
+                    i = frase1.length()-1;
                 }
             i2--;
-            }
         }
         	
         if(sw == true)
